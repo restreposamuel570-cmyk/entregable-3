@@ -1,0 +1,30 @@
+GITHUB - trabajo en equipos de 3 (comandos basicos)
+
+1. Crear el repositorio en GitHub (uno del equipo) y agregar a los 3 integrantes como colaboradores.
+
+2. Cada integrante, en su computador:
+   git clone https://github.com/USUARIO/REPOSITORIO.git
+   (o, si empieza desde cero:)
+   git init
+   git remote add origin https://github.com/USUARIO/REPOSITORIO.git
+
+3. Primer commit y subida a main:
+   git add .
+   git commit -m "Primer commit: estructura del proyecto"
+   git branch -M main
+   git push -u origin main
+
+4. Control de versiones con ramas (una por integrante):
+   git checkout -b rama-integrante1
+   (editar archivos)
+   git add .
+   git commit -m "Agrego ejercicios de vectores"
+   git push -u origin rama-integrante1
+
+5. Aprobar los cambios: en GitHub abrir un Pull Request de la rama hacia main.
+   Un companero lo revisa y pulsa "Merge pull request". Luego, en el computador:
+   git checkout main
+   git pull origin main
+
+6. Comandos utiles para los pantallazos: git status, git log --oneline, git branch, git diff
+   Tomar pantallazos de cada paso (init, add, commit, remote, push, ramas, pull request y merge).
